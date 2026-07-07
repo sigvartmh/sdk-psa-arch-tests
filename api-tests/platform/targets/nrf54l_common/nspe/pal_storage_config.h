@@ -1,10 +1,11 @@
 /** @file
- * Copyright (c) 2024-2025, Arm Limited or its affiliates. All rights reserved.
+ * Copyright (c) 2024, Arm Limited or its affiliates. All rights reserved.
  * SPDX-License-Identifier : Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
+ *
  *  http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
@@ -14,5 +15,10 @@
  * limitations under the License.
 **/
 
-/* nRF54L family shared PSA arch test configuration, see nrf54l_common. */
-#include "../../nrf54l_common/nspe/pal_config.h"
+#ifndef _PAL_STORAGE_CONFIG_H_
+#define _PAL_STORAGE_CONFIG_H_
+
+/* Platform specific max UID's size */
+#define ARCH_TEST_STORAGE_UID_MAX_SIZE 512
+
+#endif /* _PAL_STORAGE_CONFIG_H_ */
