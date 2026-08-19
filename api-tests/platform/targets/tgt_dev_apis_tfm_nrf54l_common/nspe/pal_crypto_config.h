@@ -283,6 +283,16 @@
 //#define ARCH_TEST_SHA3_512
 
 /**
+ * \def ARCH_TEST_AES_MMO_ZIGBEE
+ *
+ * Enable the AES-MMO hash algorithm of the Zigbee specification, clause B.6.
+ * Implemented by CRACEN only, so it is not enabled for the targets without it.
+ *
+ * Requires: ARCH_TEST_HASH
+ */
+#define ARCH_TEST_AES_MMO_ZIGBEE
+
+/**
  * \def ARCH_TEST_HKDF
  *
  * Enable the HKDF algorithm (RFC 5869).
