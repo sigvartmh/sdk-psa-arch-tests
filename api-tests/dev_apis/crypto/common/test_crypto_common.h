@@ -135,6 +135,11 @@ extern uint8_t expected_output[BUFFER_SIZE];
 
 extern void crypto_common_exit_action(void);
 
+extern const uint8_t ccm_star_no_tag_iv[];
+extern const uint8_t ccm_star_no_tag_plaintext[];
+extern const uint8_t ccm_star_no_tag_ciphertext[];
+extern const uint8_t ccm_star_no_tag_key_data[];
+
 #ifdef ARCH_TEST_FFDHE2048
 extern const uint8_t ffdh_key_data_2048[];
 extern const uint8_t ffdh_peer_key_data_2048[];
